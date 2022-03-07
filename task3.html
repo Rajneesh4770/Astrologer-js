@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1 </title>
+</head>
+<body>
+    <style> 
+        form{
+            height: 400px;
+            width: 500px;
+            background-color: rgba(47, 119, 119, 0.171);
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            }
+        </style>
+         <center>
+            <form style="background-color: darkgrey; border: black;"><div>
+                <h1 style="color: black;"> <marquee> <b>Astrologer</b></marquee></h1></div><br>
+                <label for ="date">Select The Date: </label>
+                <input type="number" max="31" min="1" id="date" value="1"><br><br><br>
+                <select id = "month">
+                    <option value="1">january</option>
+                    <option value="2">Feb</option>
+                    <option value="3">March</option>
+                    <option value="4">april</option>
+                    <option value="5">May</option>
+                    <option value="6">june</option>
+                    <option value="7">July</option>
+                    <option value="8">Aug</option>
+                    <option value="9">Sep</option>
+                    <option value="10">Oct</option>
+                    <option value="11">Nov</option>
+                    <option value="12">Dec</option>
+                </select>
+                <button type="button" onclick="validate()">About For You
+               </button><br><br><br>
+           
+           
+           
+            </form></center>
+            <script>
+                function validate()
+                var date = document.getElementById('date').value;
+                    var month = document.getElementById('month')
+                    var a = month.options[month.selectedIndex].value;                 {
+        // var a;
+        // var Date;
+        
+           
+        if (month == "December"){
+               
+            if (day < 22)
+            a = "Sagittarius";
+            else
+            a="capricorn";
+        }
+              
+        else if (month == "january"){
+            if (day < 20)
+            a = "Capricorn";
+            else
+            a = "aquarius";
+        }
+               
+        else if (month == "february"){
+            if (day < 19)
+            a = "Aquarius";
+            else
+            a = "pisces";
+        }
+               
+        else if(month == "march"){
+            if (day < 21)
+            a = "Pisces";
+            else
+            a = "aries";
+        }
+        else if (month == "april"){
+            if (day < 20)
+            a = "Aries";
+            else
+            a = "taurus";
+        }
+               
+        else if (month == "may"){
+            if (day < 21)
+            a = "Taurus";
+            else
+            a = "gemini";
+        }
+               
+        else if( month == "june"){
+            if (day < 21)
+            a = "Gemini";
+            else
+            a = "cancer";
+        }
+               
+        else if (month == "july"){
+            if (day < 23)
+            a = "Cancer";
+            else
+            a = "leo";
+        }
+               
+        else if( month == "august"){
+            if (day < 23)
+            a = "Leo";
+            else
+            a = "virgo";
+        }
+               
+        else if (month == "september"){
+            if (day < 23)
+            a = "Virgo";
+            else
+            a = "libra";
+        }
+               
+        else if (month == "october"){
+            if (day < 23)
+            a = "Libra";
+            else
+            a = "scorpio";
+        }
+               
+        else if (month == "november"){
+            if (day < 22)
+            a = "scorpio";
+            else
+            a = "sagittarius";
+        }
+               
+        // document.write(astro_sign);
+        console.log(a);
+    }
+ 
+    
+ 
+         let day = 1;
+        let month = "may";
+        {
+        check(date);   } 
+            </script>
+</body>
+</html>
